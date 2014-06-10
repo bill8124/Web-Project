@@ -1,2 +1,8 @@
-# undo file[D[D[D[D[D[D[D[D[Dvim undo file
+# vim undo file
 *.un~
+.DS_Store
+.svn
+log/*.log
+tmp/**
+node_modules/
+.sass-cache
