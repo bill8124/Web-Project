@@ -68,7 +68,7 @@
 					</aside>
 				</section>
                 
-                <section data-background="#4169e1">
+                <section data-background="#6495ed">
                     <h2>環境簡介</h2>
 					<ul>
 						<li class="fragment"><h3>Node.js</h3></li>
@@ -79,19 +79,23 @@
                     </ul>
                 </section>
                 
-                <section data-background="#00ced1">
+                <section data-background="#66cdaa">
                     <h1>DEMO</h1>
+                    <a href="" style="color:green;">Painter</a>
                 </section>
 
                 <section data-background="#008b8b">
-                    <h2>HTML5</h2>
+                    <h2>Canvas</h2>
                     <p>
-                        在HTML5新加入了Canvas的tag,讓我們可以輕鬆的在browser上,做出簡單的繪圖的功能
+                        <ul>
+                            <li>在HTML5新加入了Canvas的tag標籤</li><br>
+                            <li>可以更輕鬆的在browser上,簡單的做出繪圖的功能</li>
+                        </ul>
                     </p>
                 </section>
 
 				<!-- Example of nested vertical slides -->
-				<section data-background="#6b8e23">
+				<section data-background="#3cb371">
 					<section>
 						<h2>繪圖技術介紹</h2>
 						<p>
@@ -109,9 +113,9 @@
 						<h2>如何畫直線</h2>
 						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
-                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
-                            <li style="font-size=16px;" class="fragment">canvas.lineTo(endX,endY);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.lineTo(endX,endY);</li><br>
                             <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
 					    </ul>
                         </p>
@@ -120,8 +124,8 @@
 						<h2>如何畫圓形</h2>
 						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
-                            <li style="font-size=16px;" class="fragment">canvas.arc(x,y,r,start_angle,end_angle,counterclockwise);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.arc(x,y,r,start_angle,end_angle,counterclockwise);</li><br>
                             <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
 					    </ul>
                         </p>
@@ -130,8 +134,8 @@
 						<h2>如何畫矩形</h2>
 						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
-                            <li style="font-size=16px;" class="fragment">canvas.rect(x,y,width,height);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.rect(x,y,width,height);</li><br>
                             <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
 					    </ul>
                         </p>
@@ -140,9 +144,9 @@
 						<h2>如何畫橢圓</h2>
 						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
-                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
-                            <li style="font-size=16px;" class="fragment">canvas.bezierCurveTo(p1.x,p1.y,p2.x,p2.y,p3.x,p3.y);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li><br>
+                            <li style="font-size=16px;" class="fragment">canvas.bezierCurveTo(p1.x,p1.y,p2.x,p2.y,p3.x,p3.y);</li><br>
                             <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
 					    </ul>
                         </p>
@@ -151,22 +155,19 @@
 						<h2>如何加入文字</h2>
 						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
-                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
-                            <li style="font-size=16px;" class="fragment">canvas.;</li>
-                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.fillText(string,x,y);</li><br>
 					    </ul>
                         </p>
 					</section>
 				</section>
                 
-                <section data-background="#bdb76b">
+                <section data-background="#e9967a">
                     <section>
                         <h2>實作上的問題</h2>
                         <p>
                             <ol>
-                                <li style="font-size=16px;" class="fragment">畫圖的過程，游標跟著移動要如何消除前一刻的線條?</li>
-                                <li style="font-size=16px;" class="fragment">橢圓要如何畫出來,並且可以隨游標移動作更改?</li>
+                                <li style="font-size=16px;" class="fragment">畫圖的過程，游標跟著移動要如何消除前一刻的線條?</li><br>
+                                <li style="font-size=16px;" class="fragment">橢圓要如何畫出來,並且可以隨游標移動作更改?</li><br>
                                 <li style="font-size=16px;" class="fragment">橡皮擦的編框要如何處理?</li>
                             </ol>
                         </p>
@@ -185,7 +186,7 @@
                         <h3>解決方法:</h3>
                         <p>
                             <ul>
-                                <li style="font-size=16px;" class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li>
+                                <li style="font-size=16px;" class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li><br>
                                 <li style="font-size=16px;" class="fragment">我們使用bezierCurveTo,用bezierCurve找出三個點來畫出一條弧線,上下各畫一條合併成一個橢圓形</li>
                             </ul>
                         </p>
@@ -195,19 +196,23 @@
                         <h3>解決方法:</h3>
                         <p>
                             <ul>
-                                <li style="font-size=16px;" class="fragment">一開始是使用div標籤來製作橡皮擦,但這樣底層話不就會抓不到mouse的event</li>
+                                <li style="font-size=16px;" class="fragment">一開始是使用div標籤來製作橡皮擦,但這樣底層話不就會抓不到mouse的event</li><br>
                                 <li style="font-size=16px;" class="fragment">所以我們採用跟問題一同樣的解法,橡皮擦經過的區域就畫白色到底層畫布,然後再把上面畫布橡皮擦的邊框clear掉</li>
                             </ul>
                         </p>
                     </section>
                 </section>
 
+                <section data-background="#a0522d">
+                    <h1>What's Next?</h1>
+                </section>
+
 				<section data-background="#ff7f50">
-					<h2>畫布的共同編輯</h2>
+					<h2>畫布的多人共同編輯</h2>
 					<p>
                             <ul>
-                                <li style="font-size=16px;" class="fragment">我們採用firebase,來做data的Synchronize,firebase大幅度地簡化了data的同步化問題</li>
-                                <li style="font-size=16px;" class="fragment">我們只需要把修改的object傳給firebase,firebase就會幫我們把更新的object通知給其他的使用者</li>
+                                <li style="font-size=16px;" class="fragment">用firebase,來做data的Synchronize,firebase大幅度地簡化了data的同步化問題</li><br>
+                                <li style="font-size=16px;" class="fragment">只需要把修改的object傳給firebase,firebase就會幫我們把更新的object通知給其他的使用者</li>
                             </ul>
                     </p>
 				</section>
@@ -217,7 +222,7 @@
 					<h2>firebase</h2>
 					<p>
                             <ul>
-                                <li style="font-size=16px;" class="fragment"></li>
+                                <li style="font-size=16px;" class="fragment"></li><br>
                                 <li style="font-size=16px;" class="fragment"></li>
                             </ul>
                     </p>
@@ -230,18 +235,18 @@
                     </section>
 				</section>
 				
-                <section data-background="#ff69b4">
+                <section data-background="#da70d6">
 				    <h2>justfont(雲端字型)</h2>
                     <p>
-                        以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br>
+                        以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br><br>
                         趕快前往 <a href="http://www.justfont.com/">justfont</a>吧！
                     </p>
                 </section>
 
-                <section data-background="#da70d6">
+                <section data-background="#9370db">
 				    <h2>reveal.js</h2>
                     <p>
-                        reveal.js讓我們可以簡單的在HTML上做出精美,優雅的投影片,簡單的上下左右跟esc鍵就可以做投影片的縮圖瀏覽,大幅的縮減了我們製作上的困難,介面上的設計也讓人更加的一目了然！<br>
+                        reveal.js讓我們可以簡單的在HTML上做出精美,優雅的投影片,簡單的上下左右跟esc鍵就可以做投影片的縮圖瀏覽,大幅的縮減了我們製作上的困難,介面上的設計也讓人更加的一目了然！<br><br>
                         前往 <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> 投影片介紹
                     </p>
                 </section>
@@ -250,7 +255,7 @@
                     <h1>Q&A</h1>
                 </section>
 				
-                <section data-background="#8a2be2">
+                <section data-background="#6a5acd">
                     <h1>Thank you</h1>
                 </section>
 			
