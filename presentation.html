@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>HTML Presentation</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Web Final Presentation slides">
+		<meta name="author" content="簡名沅,林家瑞,魏聖倫,簡易">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -42,102 +42,214 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+				<section data-background="./background.png">
+					<h1>Web Final</h1>
+					<h2 style="color:black;">Painter</h2>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small> 
+                            <a href="http://www.csie.ntu.edu.tw/~b99902067/">簡名沅/</a>
+                            <a href="http://homepage.ntu.edu.tw/~b99501062/">魏聖倫</a><br>
+                            <a href="http://www.csie.ntu.edu.tw/~b99902107/">林家瑞/</a>
+                            <a href="http://www.csie.ntu.edu.tw/~b99902097/">簡  易</a>
+                        </small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Heads Up</h2>
+				<section data-background="./background02.jpg">
+					<h2>前述</h2>
 					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+					    類似google document的概念,在網頁上實作小畫家<br>
+                        讓線上的使用者可以共同編輯,共同作畫 
+                    </p>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						Oh hey, these are some notes. They'll be hidden in your presentation, 
+                        but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
+                
+                <section data-background="#4169e1">
+                    <h2>環境簡介</h2>
+					<ul>
+						<li class="fragment"><h3>Node.js</h3></li>
+						<li class="fragment"><h3>Jquery</h3></li>
+						<li  class="fragment"><h3>HTML</h3></li>
+						<li  class="fragment"><h3>justfont</h3></li>
+						<li  class="fragment"><h3>reveal.js</h3></li>
+                    </ul>
+                </section>
+                
+                <section data-background="#00ced1">
+                    <h1>DEMO</h1>
+                </section>
+
+                <section data-background="#008b8b">
+                    <h2>HTML5</h2>
+                    <p>
+                        在HTML5新加入了Canvas的tag,讓我們可以輕鬆的在browser上,做出簡單的繪圖的功能
+                    </p>
+                </section>
 
 				<!-- Example of nested vertical slides -->
-				<section>
+				<section data-background="#6b8e23">
 					<section>
-						<h2>Vertical Slides</h2>
+						<h2>繪圖技術介紹</h2>
 						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
+                            &lt;canvas&gt;的Method:
+                        </p>
+                        <p><br><br></p>
+                        <p>
+                        點我往下看
+                        </p>
 						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+							<img width="158" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
+						<h2>如何畫直線</h2>
+						<p>
+					    <ul>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.lineTo(endX,endY);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+					    </ul>
+                        </p>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
+						<h2>如何畫圓形</h2>
+						<p>
+					    <ul>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.arc(x,y,r,start_angle,end_angle,counterclockwise);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+					    </ul>
+                        </p>
 					</section>
 					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
+						<h2>如何畫矩形</h2>
+						<p>
+					    <ul>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.rect(x,y,width,height);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+					    </ul>
+                        </p>
+					</section>
+					<section>
+						<h2>如何畫橢圓</h2>
+						<p>
+					    <ul>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.bezierCurveTo(p1.x,p1.y,p2.x,p2.y,p3.x,p3.y);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+					    </ul>
+                        </p>
+					</section>
+					<section>
+						<h2>如何加入文字</h2>
+						<p>
+					    <ul>
+                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li>
+                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li>
+                            <li style="font-size=16px;" class="fragment">canvas.;</li>
+                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+					    </ul>
+                        </p>
 					</section>
 				</section>
+                
+                <section data-background="#bdb76b">
+                    <section>
+                        <h2>實作上的問題</h2>
+                        <p>
+                            <ol>
+                                <li style="font-size=16px;" class="fragment">畫圖的過程，游標跟著移動要如何消除前一刻的線條?</li>
+                                <li style="font-size=16px;" class="fragment">橢圓要如何畫出來,並且可以隨游標移動作更改?</li>
+                                <li style="font-size=16px;" class="fragment">橡皮擦的編框要如何處理?</li>
+                            </ol>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>問題一:如何消除上一秒鍾的線條?</h2>
+                        <h3>解決方法:</h3>
+                        <p>
+                            <ul>
+                                <li style="font-size=16px;" class="fragment">再多使用一層的畫布,每當游標移動,就先清空我們蓋在上一層的畫布,並重畫一次,一直重複直到游標放開後,再畫到底層的畫布</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>問題二:要如何畫橢圓?</h2>
+                        <h3>解決方法:</h3>
+                        <p>
+                            <ul>
+                                <li style="font-size=16px;" class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li>
+                                <li style="font-size=16px;" class="fragment">我們使用bezierCurveTo,用bezierCurve找出三個點來畫出一條弧線,上下各畫一條合併成一個橢圓形</li>
+                            </ul>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>問題三:如何處理橡皮擦的邊框?</h2>
+                        <h3>解決方法:</h3>
+                        <p>
+                            <ul>
+                                <li style="font-size=16px;" class="fragment">一開始的直覺是在canvas上清空一塊rect的區域,但這樣會讓橡皮擦的邊框較難處理</li>
+                                <li style="font-size=16px;" class="fragment">後來改用div標籤來完成橡皮擦</li>
+                            </ul>
+                        </p>
+                    </section>
+                </section>
 
-				<section>
-					<h2>Slides</h2>
+				<section data-background="#ff8c00">
+					<h2>畫布的存取</h2>
 					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
+					    
+                    </p>
 				</section>
 
-				<section>
-					<h2>Point of View</h2>
+				<section data-background="#e9967a">
+                    <section>
+					<h2>如何做到共同編輯</h2>
+					<p>
+					    利用週期性的存檔，把畫布暫時的記錄下來
+                    </p>
+                    </section>
+                    <section>
+                    <h2> </h2>
 					<p>
 						Press <strong>ESC</strong> to enter the slide overview.
 					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+                    </section>
 				</section>
+				
+                <section data-background="#ff69b4">
+				    <h2>justfont(雲端字型)</h2>
+                    <p>
+                        以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br>
+                        趕快前往 <a href="http://www.justfont.com/">justfont</a>吧！
+                    </p>
+                </section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section data-markdown>
+                <section data-background="#da70d6">
+				    <h2>reveal.js</h2>
+                    <p>
+                        reveal.js讓我們可以簡單的在HTML上做出精美,優雅的投影片,簡單的上下左右跟esc鍵就可以做投影片的縮圖瀏覽,大幅的縮減了我們製作上的困難,介面上的設計也讓人更加的一目了然！<br>
+                        前往 <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a> 投影片介紹
+                    </p>
+                </section>
+                
+                <section data-background="#7b68ee">
+                    <h1>Q&A</h1>
+                </section>
+				
+                <section data-background="#8a2be2">
+                    <h1>Thank you</h1>
+                </section>
+                
+                
+                <section data-markdown>
 					<script type="text/template">
 						## Markdown support
 
