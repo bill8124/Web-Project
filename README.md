@@ -4,6 +4,7 @@ Web-Project
 A simple online painter application
 
 [Project Introduction][1]
+
 [Project Demo][2]
 
 
