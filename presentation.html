@@ -7,7 +7,7 @@
 		<title>HTML Presentation</title>
 
 		<meta name="description" content="Web Final Presentation slides">
-		<meta name="author" content="簡名沅,林家瑞,魏聖倫,簡易">
+		<meta name="author" content="簡名沅、林家瑞、魏聖倫、簡易">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -34,6 +34,9 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+        <!-- justfont -->
+        <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','28325']);_jf.push(['_setFont','wt011','css','.wt011']);_jf.push(['_setFont','wt011','alias','wt011']);_jf.push(['_setFont','wt011','english','sans-serif']);_jf.push(['_setFont','wt014','css','.wt014']);_jf.push(['_setFont','wt014','css','h1']);_jf.push(['_setFont','wt014','alias','wt014']);(function(f,q,c,h,e,i,r,d){var k=f._jf;if(k.constructor===Object){return}var l,t=q.getElementsByTagName("html")[0],a=function(u){for(var v in k){if(k[v][0]==u){if(false===k[v][1].call(k)){break}}}},j=/\S+/g,o=/[\t\r\n\f]/g,b=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,g="".trim,s=g&&!g.call("\uFEFF\xA0")?function(u){return u==null?"":g.call(u)}:function(u){return u==null?"":(u+"").replace(b,"")},m=function(y){var w,z,v,u,x=typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):" ";if(z){u=0;while((v=w[u++])){if(z.indexOf(" "+v+" ")<0){z+=v+" "}}t[c]=s(z)}}},p=function(y){var w,z,v,u,x=arguments.length===0||typeof y==="string"&&y;if(x){w=(y||"").match(j)||[];z=t[c]?(" "+t[c]+" ").replace(o," "):"";if(z){u=0;while((v=w[u++])){while(z.indexOf(" "+v+" ")>=0){z=z.replace(" "+v+" "," ")}}t[c]=y?s(z):""}}},n;k.push(["_eventActived",function(){p(h);m(e)}]);k.push(["_eventInactived",function(){p(h);m(i)}]);k.addScript=n=function(u,A,w,C,E,B){E=E||function(){};B=B||function(){};var x=q.createElement("script"),z=q.getElementsByTagName("script")[0],v,y=false,D=function(){x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;a("_eventInactived");B()};if(C){v=setTimeout(function(){D()},C)}x.type=A||"text/javascript";x.async=w;x.onload=x.onreadystatechange=function(G,F){if(!y&&(!x.readyState||/loaded|complete/.test(x.readyState))){y=true;if(C){clearTimeout(v)}x.src="";x.onerror=x.onload=x.onreadystatechange=null;x.parentNode.removeChild(x);x=null;if(!F){setTimeout(function(){E()},200)}}};x.onerror=function(H,G,F){if(C){clearTimeout(v)}D();return true};x.src=u;z.parentNode.insertBefore(x,z)};a("_eventPreload");m(h);n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.2/id/122403449544");</script>
 	</head>
 
 	<body>
@@ -42,24 +45,22 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="./background.png">
+				<section>
 					<h1>Web Final</h1>
 					<h2 style="color:black;">Painter</h2>
-					<p>
-						<small> 
-                            <a href="http://www.csie.ntu.edu.tw/~b99902067/">簡名沅/</a>
-                            <a href="http://homepage.ntu.edu.tw/~b99501062/">魏聖倫</a><br>
-                            <a href="http://www.csie.ntu.edu.tw/~b99902107/">林家瑞/</a>
-                            <a href="http://www.csie.ntu.edu.tw/~b99902097/">簡  易</a>
-                        </small>
-					</p>
+                    <p>
+                    <a href="http://www.csie.ntu.edu.tw/~b99902067/">簡名沅</a>、
+                    <a href="http://homepage.ntu.edu.tw/~b99501062/">魏聖倫</a>、
+                    <a href="http://www.csie.ntu.edu.tw/~b99902107/">林家瑞</a>、
+                    <a href="http://www.csie.ntu.edu.tw/~b99902097/">簡  易</a>
+                    </p>
 				</section>
 
-				<section data-background="#4682b4">
+				<section>
 					<h2>前述</h2>
 					<p>
-					    類似google document的概念,在網頁上實作小畫家<br>
-                        讓線上的使用者可以共同編輯,共同作畫 
+					    類似Google Document的概念，在網頁上實作小畫家<br>
+                        讓線上的使用者可以共同編輯，共同作畫。
                     </p>
 
 					<aside class="notes">
@@ -68,7 +69,7 @@
 					</aside>
 				</section>
                 
-                <section data-background="#6495ed">
+                <section>
                     <h2>環境簡介</h2>
 					<ul>
 						<li class="fragment"><h3>Node.js</h3></li>
@@ -79,151 +80,122 @@
                     </ul>
                 </section>
                 
-                <section data-background="#66cdaa">
+                <section>
                     <h1>DEMO</h1>
                     <a href="" style="color:green;">Painter</a>
                 </section>
 
-                <section data-background="#008b8b">
+                <section>
                     <h2>Canvas</h2>
-                    <p>
-                        <ul>
-                            <li>在HTML5新加入了Canvas的tag標籤</li><br>
-                            <li>可以更輕鬆的在browser上,簡單的做出繪圖的功能</li>
-                        </ul>
-                    </p>
+                    <ul>
+                        <li>在HTML5新加入了Canvas的tag標籤</li><br>
+                        <li>可以更輕鬆的在browser上,簡單的做出繪圖的功能</li>
+                    </ul>
                 </section>
 
 				<!-- Example of nested vertical slides -->
-				<section data-background="#3cb371">
+				<section>
 					<section>
 						<h2>繪圖技術介紹</h2>
 						<p>
-                            &lt;canvas&gt;的Method:
+                            利用 HTML5 &lt;canvas&gt;
                         </p>
-                        <p><br><br></p>
-                        <p>
-                        點我往下看
-                        </p>
-						<a href="#" class="image navigate-down">
-							<img width="158" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
 					<section>
 						<h2>如何畫直線</h2>
-						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.lineTo(endX,endY);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+                            <li class="fragment">canvas.beginPath();</li><br>
+                            <li class="fragment">canvas.moveTo(startX,startY);</li><br>
+                            <li class="fragment">canvas.lineTo(endX,endY);</li><br>
+                            <li class="fragment">canvas.stroke();</li>
 					    </ul>
-                        </p>
 					</section>
 					<section>
 						<h2>如何畫圓形</h2>
-						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.arc(x,y,r,start_angle,end_angle,counterclockwise);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+                            <li class="fragment">canvas.beginPath();</li><br>
+                            <li class="fragment">canvas.arc(x,y,r,start_angle,end_angle,counterclockwise);</li><br>
+                            <li class="fragment">canvas.stroke();</li>
 					    </ul>
-                        </p>
 					</section>
 					<section>
 						<h2>如何畫矩形</h2>
-						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.rect(x,y,width,height);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+                            <li class="fragment">canvas.beginPath();</li><br>
+                            <li class="fragment">canvas.rect(x,y,width,height);</li><br>
+                            <li class="fragment">canvas.stroke();</li>
 					    </ul>
-                        </p>
 					</section>
 					<section>
 						<h2>如何畫橢圓</h2>
-						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.beginPath();</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.moveTo(startX,startY);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.bezierCurveTo(p1.x,p1.y,p2.x,p2.y,p3.x,p3.y);</li><br>
-                            <li style="font-size=16px;" class="fragment">canvas.stroke();</li>
+                            <li class="fragment">canvas.beginPath();</li><br>
+                            <li class="fragment">canvas.moveTo(startX,startY);</li><br>
+                            <li class="fragment">canvas.bezierCurveTo(p1.x,p1.y,p2.x,p2.y,p3.x,p3.y);</li><br>
+                            <li class="fragment">canvas.stroke();</li>
 					    </ul>
-                        </p>
 					</section>
 					<section>
 						<h2>如何加入文字</h2>
-						<p>
 					    <ul>
-                            <li style="font-size=16px;" class="fragment">canvas.fillText(string,x,y);</li><br>
+                            <li class="fragment">canvas.fillText(string,x,y);</li><br>
 					    </ul>
-                        </p>
 					</section>
 				</section>
                 
-                <section data-background="#e9967a">
+                <section>
                     <section>
                         <h2>實作上的問題</h2>
-                        <p>
-                            <ol>
-                                <li style="font-size=16px;" class="fragment">畫圖的過程，游標跟著移動要如何消除前一刻的線條?</li><br>
-                                <li style="font-size=16px;" class="fragment">橢圓要如何畫出來,並且可以隨游標移動作更改?</li><br>
-                                <li style="font-size=16px;" class="fragment">橡皮擦的編框要如何處理?</li>
-                            </ol>
-                        </p>
+                        <ol>
+                            <li class="fragment">畫圖的過程，游標跟著移動要如何消除前一刻的線條?</li><br>
+                            <li class="fragment">橢圓要如何畫出來,並且可以隨游標移動作更改?</li><br>
+                            <li class="fragment">橡皮擦的編框要如何處理?</li>
+                        </ol>
                     </section>
                     <section>
                         <h2>問題一:如何消除上一秒鍾的線條?</h2>
                         <h3>解決方法:</h3>
-                        <p>
-                            <ul>
-                                <li style="font-size=16px;" class="fragment">再多使用一層的畫布,每當游標移動,就先清空我們蓋在上一層的畫布,並重畫一次,一直重複直到游標放開後,再畫到底層的畫布</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li class="fragment">再多使用一層的畫布,每當游標移動,就先清空我們蓋在上一層的畫布,並重畫一次,一直重複直到游標放開後,再畫到底層的畫布</li>
+                        </ul>
                     </section>
                     <section>
                         <h2>問題二:要如何畫橢圓?</h2>
                         <h3>解決方法:</h3>
-                        <p>
-                            <ul>
-                                <li style="font-size=16px;" class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li><br>
-                                <li style="font-size=16px;" class="fragment">我們使用bezierCurveTo,用bezierCurve找出三個點來畫出一條弧線,上下各畫一條合併成一個橢圓形</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li><br>
+                            <li class="fragment">我們使用bezierCurveTo,用bezierCurve找出三個點來畫出一條弧線,上下各畫一條合併成一個橢圓形</li>
+                        </ul>
                     </section>
                     <section>
-                        <h2>問題三:如何處理橡皮擦的邊框?</h2>
+                        <h2>問題三:如何預覽橡皮擦的範圍？</h2>
                         <h3>解決方法:</h3>
-                        <p>
-                            <ul>
-                                <li style="font-size=16px;" class="fragment">一開始是使用div標籤來製作橡皮擦,但這樣底層話不就會抓不到mouse的event</li><br>
-                                <li style="font-size=16px;" class="fragment">所以我們採用跟問題一同樣的解法,橡皮擦經過的區域就畫白色到底層畫布,然後再把上面畫布橡皮擦的邊框clear掉</li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li class="fragment">使用div標籤來製作橡皮擦,但這樣底層話不就會抓不到mouse的event</li><br>
+                            <li class="fragment">所以我們採用跟問題一同樣的解法,橡皮擦經過的區域就畫白色到底層畫布,然後再把上面畫布橡皮擦的邊框clear掉</li>
+                        </ul>
                     </section>
                 </section>
 
-                <section data-background="#a0522d">
+                <section>
                     <h1>What's Next?</h1>
                 </section>
 
-				<section data-background="#ff7f50">
+				<section>
 					<h2>畫布的多人共同編輯</h2>
-					<p>
-                            <ul>
-                                <li style="font-size=16px;" class="fragment">用firebase,來做data的Synchronize,firebase大幅度地簡化了data的同步化問題</li><br>
-                                <li style="font-size=16px;" class="fragment">只需要把修改的object傳給firebase,firebase就會幫我們把更新的object通知給其他的使用者</li>
-                            </ul>
-                    </p>
+                    <ul>
+                        <li class="fragment">用firebase,來做data的Synchronize,firebase大幅度地簡化了data的同步化問題</li><br>
+                        <li class="fragment">只需要把修改的object傳給firebase,firebase就會幫我們把更新的object通知給其他的使用者</li>
+                    </ul>
 				</section>
 
-				<section data-background="#e9967a">
+				<section>
                     <section>
-					<h2>firebase</h2>
+					<h2>Firebase</h2>
 					<p>
                             <ul>
-                                <li style="font-size=16px;" class="fragment"></li><br>
-                                <li style="font-size=16px;" class="fragment"></li>
+                                <li class="fragment"></li><br>
+                                <li class="fragment"></li>
                             </ul>
                     </p>
                     </section>
@@ -235,7 +207,7 @@
                     </section>
 				</section>
 				
-                <section data-background="#da70d6">
+                <section>
 				    <h2>justfont(雲端字型)</h2>
                     <p>
                         以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br><br>
@@ -243,7 +215,7 @@
                     </p>
                 </section>
 
-                <section data-background="#9370db">
+                <section>
 				    <h2>reveal.js</h2>
                     <p>
                         reveal.js讓我們可以簡單的在HTML上做出精美,優雅的投影片,簡單的上下左右跟esc鍵就可以做投影片的縮圖瀏覽,大幅的縮減了我們製作上的困難,介面上的設計也讓人更加的一目了然！<br><br>
@@ -251,14 +223,10 @@
                     </p>
                 </section>
                 
-                <section data-background="#7b68ee">
-                    <h1>Q&A</h1>
-                </section>
-				
-                <section data-background="#6a5acd">
+                <section>
                     <h1>Thank you</h1>
+                    <h2>Q&A?</h2>
                 </section>
-			
             </div>
 		</div>
 
@@ -279,8 +247,8 @@
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundImage: 'img/background+a.png',
+				parallaxBackgroundSize: '1366px 768px',
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
