@@ -1,7 +1,6 @@
 body {
     font-size: 1.7em;
-    padding-left: 1em;
-    padding-bottom: 2em;
+    font-family: 'Adobe 繁黑體 Std B', '文泉驛微米黑', '微軟正黑體', sans-serif;
 }
 h1 {
     text-align: center;
@@ -15,7 +14,30 @@ h2:before {
     vertical-align: middle;
     margin-right: 0.6em;
 }
-img.photo {
+img.member {
     width: 300px;
     margin-right: 10px;
 }
+div.member {
+    text-align: center;
+    padding: 10px;
+}
+footer {
+    text-align: center;
+    background-color: #88C;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+div.bitbucket {
+    display: inline-block;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 77px;
+    right: 1px;
+    font-size: 10pt;
+} 

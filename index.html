@@ -1,81 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>「Web程式設計與應用」期末計畫摘要：網頁版的小畫家</title>
+    <head>
+        <meta charset="utf-8">
+        <title>Collaborative Painter Introduction</title>
 
-<!-- jQuery -->
-<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+        <!-- jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-<!-- ** Bootstrap ** -->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <!-- Bootstrap CSS & JavaScript -->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
 
-</head>
+    <body>
+        <h1>Collaborative Painter</h1>
+        <hr>
 
-<body>
-<h1>「Web程式設計與應用」期末計畫摘要：網頁版的小畫家</h1>
-<hr>
-
-<h2>主題說明</h2>
-除了一般小畫家的功能外，新增功能類似目前的Google Document，讓小畫家可以多人一起共同編輯跟繪圖。
-
-<h2>內容大綱</h2>
-<ul>
-    <li><a target="_blank" href="readme.html#basic">繪圖功能簡介</a></li>
-    <li><a target="_blank" href="readme.html#how-to">網頁如何呈現小畫家</a></li>
-    <li><a target="_blank" href="readme.html#features">繪圖功能的實作</a></li>
-    <li><a target="_blank" href="readme.html#storage">畫布的存取</a></li>
-    <li><a target="_blank" href="readme.html#concurrency">共同編輯功能</a></li>
-    <li><a target="_blank" href="readme.html#conclusion">結論、展望與感想</a></li>
-    <li><a target="_blank" href="readme.html#reference">參考資料</a></li>
-    <li><a target="_blank" href="presentation.html">報告投影片</a></li>
-</ul>
-
-<h2>成員及分工：Team 30</h2>
-<table class="table table-responsive">
-    <tbody>
-    <tr>
-        <td>
-            <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902067/">
-                <img class="photo" src="img/ming-yuan.jpg">
-                資工四 簡名沅
+        <div class="container-fluid">
+            <a class="btn btn-primary" href="http://simple-painter.herokuapp.com/">Go Drawing</a>
+            <a class="btn btn-info" href="presentation.html">報告投影片</a>
+            <a href="https://bitbucket.org/b99902097/webfinal">
+                <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+                <div class="bitbucket">Bitbucket</div>
             </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a target="_blank" href="http://homepage.ntu.edu.tw/~b99501062/">
-                <img class="photo" src="img/sheng-lun.jpg">
-                資工四 魏聖倫
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902107/">
-                <img class="photo" src="img/chia-rui.jpg">
-                資工四 林家瑞
-            </a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902097/">
-                <img class="photo" src="img/chien-yi.jpg">
-                資工四 簡易
-            </a>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<footer class="container-fluid">
-<a class="btn btn-primary" href="https://bitbucket.org/b99902097/webfinal">GitHub Repository</a>
-</footer>
 
-</body>
+            <h2>主題說明</h2>
+            在網頁上實作小畫家的功能，讓線上的使用者可以多人共同作畫，而且能夠自動存檔，在不同地方、不同瀏覽器都能編輯。
+
+            <h2>成員及分工：Team 30</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="member">
+                        <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902067/">
+                            <img class="img-thumbnail member" src="img/ming-yuan.jpg"><br>
+                            資工四 簡名沅
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="member">
+                        <a target="_blank" href="http://homepage.ntu.edu.tw/~b99501062/">
+                            <img class="img-thumbnail member" src="img/sheng-lun.jpg"><br>
+                            資工四 魏聖倫
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="member">
+                        <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902107/">
+                            <img class="img-thumbnail member" src="img/chia-rui.jpg"><br>
+                            資工四 林家瑞
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="member">
+                        <a target="_blank" href="http://www.csie.ntu.edu.tw/~b99902097/">
+                            <img class="img-thumbnail member" src="img/chien-yi.jpg"><br>
+                            資工四 簡易
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section id="conclusion">
+                <h2>結論、展望與感想</h2>
+                藉由結合許多功能強大平台和工具，我們很快地做出想要的功能。<br>
+                然而，有些跨瀏覽器的問題還需要解決，例如：在 IE 上面無法正常運作。<br>
+                此外，未來希望能夠達成復原的功能。
+            </section>
+            <section id="reference">
+                <h2>參考資料</h2>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML Element reference - HTML | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript reference - JavaScript | MDN</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/DOM">Document Object Model (DOM) | MDN</a></li>
+                    <li>W3C Documents</li>
+                    <li>W3C Tutorials</li>
+                    <li>jQuery document</li>
+                    <li>Bootstrap document</li>
+                    <li>Firebase tutorial and document</li>
+                    <li>Node.js documents</li>
+                    <li>express API reference</li>
+                    <li>Heroku document</li>
+                    <li>Facebook Share Button</li>
+                    <li>Reveal.js tutorial</li>
+                    <li>Reveal.js document</li>
+                    <li>justfont document</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            National Taiwan University<br>
+            Computer Science and Information Engineering Dept.<br>
+            Web Programming and Applications - 2014 Spring<br>
+            Term Project - Team 30<br>
+        </footer>
+    </body>
 </html>

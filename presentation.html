@@ -82,20 +82,18 @@
              a("_eventPreload");
              m(h);
              n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.2/id/122403449544");
-         </script>
+        </script>
 
-         <link rel="stylesheet" href="css/presentation.css">
-     </head>
+        <link rel="stylesheet" href="css/presentation.css">
+    </head>
 
 	<body>
-
 		<div class="reveal cht-font">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
                 <section>
                     <h1>Collaborative Painter</h1>
-                    <h3><a href="http://simple-painter.herokuapp.com/" target="_blank">→ Start Drawing</a></h3>
+                    <h3><a href="http://simple-painter.herokuapp.com/" target="_blank">→ Go Drawing</a></h3>
                     <p>
                     <h3>Team 30 / 臺大資工B99</h3>
                     <a href="http://www.csie.ntu.edu.tw/~b99902067/" target="_blank">簡名沅</a>
@@ -113,12 +111,11 @@
                     <section>
                         <h1>Intro</h1>
                         <p>
-                        在網頁上實作小畫家的功能，讓線上的使用者可以共同作畫，<br>
-                        而且能夠自動存檔，在不同地方、不同瀏覽器都能編輯。
+                        在網頁上實作小畫家的功能，讓線上的使用者可以多人共同作畫，而且能夠自動存檔，在不同地方、不同瀏覽器都能編輯。
                         </p>
                         <br>
                         <p>
-                        ※ 目前支援 Firefox 與 Chrome，尚不支援 IE。
+                        ※ 目前支援 Firefox 與 Chrome，尚未支援 IE。
                         </p>
 
                         <aside class="notes">
@@ -142,6 +139,11 @@
                             <img class="tech" src="img/revealjs_logo.PNG" alt="reveal.js" />
                             <img class="tech" src="img/justfont_logo.png" alt="justfont" />
                         </p>
+                    </section>
+                    <section>
+                        <h2>程式架構</h2>
+                        <a href="http://simple-painter.herokuapp.com/1402948541146" target="_blank">(此圖由我們所寫出的小畫家繪製而成)</a>
+                        <img class="stretch" src="img/overview.png" alt="overview">
                     </section>
                 </section>
 
@@ -249,30 +251,32 @@
                     <section>
                         <h1>Node.js & Express & EJS</h1>
                         <ul>
-                            <li>
+                            <li class="fragment">
                             <a href="http://nodejs.org/" target="_blank">Node.js</a>
                             是一個基於 Google V8 引擎的 JavaScript 平台，讓程式設計師輕鬆撰寫可擴充(scalable)的網路程式。
                             </li>
-                            <li>
+                            <li class="fragment">
                             <a href="http://expressjs.com/" target="_blank">express</a>
                             是一個非常好用的 node.js 模組，提供許多方便架設網站的功能。
                             </li>
-                            <li>
+                            <li class="fragment">
                             <a href="http://expressjs.com/" target="_blank">EJS</a>
                             的全名是 Embedded JavaScript，能依據不同的Data產生不同的網頁。
                             </li>
                         </ul>
                     </section>
                     <section>
-                        <h2>角色</h2>
-                        <div style="display: inline-block; width: 60%">
-                            <div class="fragment"><h3>Node.js</h3>
-                            我們的成員分別使用 Windows 7, Windows 8, Mac, 和 Linux，所以跨平台的 Node.js 絕對是網站開發的不二選擇。XD</div><br>
-                            <div class="fragment"><h3>express &amp; EJS</h3>
-                            我們利用 express 解讀網址中的參數，並透過 EJS 產生對應的網頁內容給使用者。</div>
+                        <h2>角色 - Node.js</h2>
+                        <p>我們的成員分別使用 Windows 7, Windows 8, Mac, 和 Linux，所以跨平台的 Node.js 絕對是網站開發的不二選擇。XD</p>
+                    </section>
+                    <section>
+                        <h2>express &amp; EJS</h2>
+                        <div class="fragment" style="display: inline-block; width: 60%; vertical-align: top">
+                            我們利用 express 解讀網址中的參數，並透過 EJS 產生對應的網頁內容給使用者。<br>
+                            <img src="screenshot/ejs_input.PNG" alt="url" />
                         </div>
-                        <div class="fragment" style="display: inline-block; float: right">
-                            <img src="screenshot/ejs_eg1.PNG" alt="chatbox name" /><br>
+                        <div class="fragment" style="display: inline-block; margin-left: 3%">
+                            <img src="screenshot/ejs_eg1.PNG" alt="chatbox name" style="display: block"/>
                             <img src="screenshot/ejs_eg2.PNG" alt="fb share" />
                         </div>
                     </section>
@@ -303,7 +307,7 @@
                 </section>
 
 				<section>
-					<h2>Facebook Button</h2>
+					<h1>Facebook Button</h1>
 					<p>
 						在這裡我們進入以下網頁,輸入'URL to share'及選擇'Layout'之後,按下'Get Code'就可以得到一個分享按鈕!
 						<div id="share" class="fb-share-button" data-type="button" data-href="http://simple-painter.herokuapp.com"></div>
@@ -313,7 +317,7 @@
 				
                 <section>
                     <section>
-				        <h2>reveal.js</h2>
+				        <h1>reveal.js</h1>
                         <p>reveal.js讓我們可以簡單的在HTML上做出精美,優雅的投影片<br>大幅的縮減了我們製作上的困難,<br>介面上的設計也讓人更加的一目了然！
                     </section>
                     <section>
@@ -322,7 +326,7 @@
                         只需要include reveal.js馬上讓你的投影片與眾不同</p>
                     </section>
                     <section>
-                        <p>最不一樣的效果,ex:</p><br>
+                        <h2>最不一樣的效果，如：</h2>
                         <ul>
                             <li class="fragment">按ESC進入縮圖瀏覽</li><br>
                             <li class="fragment">按b進入瀏覽器休眠</li><br>
@@ -331,13 +335,14 @@
                         </ul>
                     </section>
                     <section>
-                        <p>Find More?</p>
+                        <h2>Find More?</h2>
                         <a href="http://lab.hakim.se/reveal-js/#/">REVEAL.JS</a>
                     </section>
                 </section>
 
                 <section>
-                    <h2>justfont<span class="wt011">(雲端中文字型)</span></h2>
+                    <h1>justfont</h1>
+                    <h2>(雲端中文字型)</h2>
                     <p>
                         以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br><br>
                         趕快前往 <a href="http://www.justfont.com/">justfont</a>吧！
@@ -347,6 +352,12 @@
                 <section>
                     <h1>Thank you</h1>
                     <h2>Q&A?</h2>
+                    <br><br>
+                    <p>Picture Copyright</p>
+                    <small>
+                        <a href="https://www.flickr.com/photos/happykiddo4ever/5612787888/" target="_blank">Paint your life. by happykiddo4ever</a>
+                        (CC BY 2.0)<br>
+                    </small>
                 </section>
             </div>
 		</div>
