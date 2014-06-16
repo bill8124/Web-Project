@@ -1,13 +1,22 @@
-div.tech img.tech {
-    height: 100px;
+p.tech {
+    margin-top: 40px;
+}
+p.tech img.tech {
+    height: 96px;
     padding: 5px;
     border: none;
     margin-top: 0;
     margin-bottom: 0;
 }
-h1.cht-font, h2.cht-font, h3.cht-font, h4.cht-font, h5.cht-font, h6.cht-font {
+/*h1.cht-font, h2.cht-font, h3.cht-font, h4.cht-font, h5.cht-font, h6.cht-font {
     font-family: 'League Gothic', Impact, 'wt011', sans-serif;
-}
+}*/
 .cht-font {
     font-family: 'Lato', 'wt011', sans-serif;
+}
+.cht-font h1, .cht-font h2, .cht-font h3, .cht-font h4, .cht-font h5, .cht-font h6 {
+    font-family: 'League Gothic', Impact, 'wt011', sans-serif;
+}
+.reveal .slides td {
+    vertical-align: top;
 }
