@@ -1,42 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
 
-	<head>
-		<meta charset="utf-8">
+        <title>Collaborative Painter Implementation</title>
 
-		<title>HTML Presentation</title>
+        <meta name="description" content="Web Final Presentation slides">
+        <meta name="author" content="簡名沅、林家瑞、魏聖倫、簡易">
 
-		<meta name="description" content="Web Final Presentation slides">
-		<meta name="author" content="簡名沅、林家瑞、魏聖倫、簡易">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
         <!-- jQuery -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
 
         <!-- justfont -->
         <script type="text/javascript">
@@ -83,104 +82,112 @@
              a("_eventPreload");
              m(h);
              n(r,"text/javascript",false,3000)})(this,this.document,"className","jf-loading","jf-active","jf-inactive","//ds.justfont.com/js/stable/v/4.2/id/122403449544");
-     </script>
-	</head>
+         </script>
+
+         <link rel="stylesheet" href="css/presentation.css">
+     </head>
 
 	<body>
 
-		<div class="reveal wt011">
+		<div class="reveal cht-font">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1 class="">Web Final</h1>
-					<h2><a href="http://simple-painter.herokuapp.com/">Painter</a></h2>
-                    <h3 class="wt011">臺大資工B99</h3>
-                    <a href="http://www.csie.ntu.edu.tw/~b99902067/">簡名沅</a>
-                    <a href="http://homepage.ntu.edu.tw/~b99501062/">魏聖倫</a>
-                    <a href="http://www.csie.ntu.edu.tw/~b99902107/">林家瑞</a>
-                    <a href="http://www.csie.ntu.edu.tw/~b99902097/">簡易</a>
+					<h1 class="cht-font">Collaborative Painter</h1>
+					<h2 class="cht-font"><a href="http://simple-painter.herokuapp.com/" target="_blank">→ Play ←</a></h2>
+                    <h3 class="cht-font">Team 30 / 臺大資工B99</h3>
+                    <a href="http://www.csie.ntu.edu.tw/~b99902067/" target="_blank">簡名沅</a>
+                    <a href="http://homepage.ntu.edu.tw/~b99501062/" target="_blank">魏聖倫</a>
+                    <a href="http://www.csie.ntu.edu.tw/~b99902107/" target="_blank">林家瑞</a>
+                    <a href="http://www.csie.ntu.edu.tw/~b99902097/" target="_blank">簡易</a>
+                    <br><br>
+                    <code style="text-decoration: underline; color: #FECA13;">http://goo.gl/Gwc1X9</code>
 				</section>
 
 				<section>
-					<h2 class="wt011">前述</h2>
-					<p>
-					    類似Google Document的概念，在網頁上實作小畫家<br>
-                        讓線上的使用者可以共同編輯，共同作畫。
-                    </p>
+                    <section>
+                        <h1 class="cht-font">Intro</h1>
+                        <p>
+                        在網頁上實作小畫家的功能，<br>
+                        並且讓線上的使用者可以共同編輯，共同作畫。
+                        </p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, 
-                        but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+                        <aside class="notes">
+                            Oh hey, these are some notes. They'll be hidden in your presentation, 
+                            but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                        </aside>
+                    </section>
                 
-                <section>
-                    <h2 class="wt011">使用技術</h2>
-					<ul>
-						<li> &amp; CSS</li>
-                        <li>Javascript &amp; jQuery</li>
-                        <li>Bootstrap</li>
-						<li>Node.js &amp; Express </li>
-						<li>Firebase</li>
-						<li>justfont</li>
-						<li>reveal.js</li>
-						<li>Heroku</li>
-						<li>Facebook API</li>
-                    </ul>
+                    <section>
+                        <h2 class="cht-font">使用技術</h2>
+                        <div class="tech">
+                            <img class="tech" src="img/HTML5_Logo_256.png" alt="HTML5" />
+                            <img class="tech" src="img/JQuery_logo.svg" alt="jQuery" />
+                            <img class="tech" src="img/Bootstrap_logo.png" alt="Bootstrap" />
+                            <img class="tech" src="img/facebook_icon.png" alt="Facebook" /><br>
+                            <img class="tech" src="img/nodejs_logo.svg" alt="Node.js" />
+                            <img class="tech" src="img/expressjs_logo.png" alt="Express" />
+                            <img class="tech" src="img/firebase_logo.png" alt="Firebase" />
+                            <img class="tech" src="img/heroku_logo.png" alt="Heroku" /><br>
+                            <img class="tech" src="img/revealjs_logo.PNG" alt="reveal.js" />
+                            <img class="tech" src="img/justfont_logo.png" alt="justfont" />
+                        </div>
+                    </section>
                 </section>
 
                 <section>
                     <section>
-                        <h2>Canvas</h2>
+                        <h1 class="cht-font">Canvas</h1>
                         <ul>
                             <li>在HTML5新加入了&lt;canvas&gt;</li>
                             <li>可以更輕鬆地在browser上繪圖</li>
                         </ul>
                     </section>
                     <section>
+                        <h2 class="cht-font">繪圖功能實作</h2>
+                        <br>
                         <div class="fragment">
-                            <h2 class="wt011" style="display: inline-block;">畫直線</h2>
+                            <h3 class="cht-font" style="display: inline-block;">畫直線</h3>
                             <code data-language="javascript" style="display: inline-block; width: 11em;">lineTo(...)</code>
                         </div>
                         <div class="fragment">
-                            <h2 class="wt011" style="display: inline-block;">畫矩形</h2>
+                            <h3 class="cht-font" style="display: inline-block;">畫矩形</h3>
                             <code data-language="javascript" style="display: inline-block; width: 11em;">strokeRect(...)</code>
                         </div>
                         <div class="fragment">
-                            <h2 class="wt011" style="display: inline-block;">畫圓形</h2>
+                            <h3 class="cht-font" style="display: inline-block;">畫圓形</h3>
                             <code data-language="javascript" style="display: inline-block; width: 11em;">arc(...)</code>
                         </div>
                         <div class="fragment">
-                            <h2 class="wt011" style="display: inline-block;">畫橢圓</h2>
+                            <h3 class="cht-font" style="display: inline-block;">畫橢圓</h3>
                             <code data-language="javascript" style="display: inline-block; width: 11em;">bezierCurveTo(...)</code>
+                            <aside>bezier Curve 是貝茲曲線</aside>
                         </div>
                         <div class="fragment">
-                            <h2 class="wt011" style="display: inline-block;">寫文字</h2>
+                            <h3 class="cht-font" style="display: inline-block;">寫文字</h3>
                             <code data-language="javascript" style="display: inline-block; width: 11em;">fillText(...)</code>
                         </div>
                     </section>
-				</section>
-                
-                <section>
                     <section>
-                        <h1 class="wt011">實作上的問題</h1>
+                        <h1 class="cht-font">實作上的問題</h1>
                     </section>
                     <section>
-                        <h2 class="wt011">畫圖的過程，如何讓圖形跟著游標移動？</h2>
+                        <h2 class="cht-font">畫圖的過程，如何呈現正在畫的圖形？</h2>
                         <ul>
                             <li class="fragment">再使用一層畫布作為預覽，每當游標移動，就清空預覽畫布重畫一次；游標放開後，再畫到底層的畫布。</li>
                         </ul>
                     </section>
                     <section>
-                        <h2 class="wt011">如何畫橢圓？</h2>
+                        <h2 class="cht-font">如何畫橢圓？</h2>
                         <ul>
-                            <li class="fragment">有些人使用arc加上scale來畫出橢圓形,但會產生變形</li>
-                            <li class="fragment">我們使用bezierCurveTo，找出三個點來畫出一條弧線，用上下各一條弧線構成橢圓形。</li>
+                            <li class="fragment">有些人使用arc加上scale來畫出橢圓形，但會產生變形。</li>
+                            <li class="fragment">我們使用bezierCurveTo，利用四個點畫出一條弧線。<br>
+                            上下各畫一條弧線，就構成橢圓形了。</li>
                         </ul>
                     </section>
                     <section>
-                        <h2 class="wt011">如何預覽橡皮擦的範圍？</h2>
+                        <h2 class="cht-font">如何預覽橡皮擦的範圍？</h2>
                         <ul>
                             <li class="fragment">原本想製造一個div作為橡皮擦的外框跟著滑鼠跑，但這樣canvas就抓不到mouse的event。Orz</li>
                             <li class="fragment">於是改成在預覽畫布上畫黑色框框，並隱藏滑鼠游標。</li>
@@ -190,28 +197,59 @@
                     </section>
                 </section>
 
-				<section>
-                    <section>
-					<h2 class="wt011">畫布的多人共同編輯</h2>
-                    Firebase is OP
-                    </section>
-                    <section>
-					<h2>Firebase</h2>
-                    <ul>
-                        <li class="fragment">Firebase 大幅度簡化資料的同步</li>
-                        <li class="fragment">只需要把修改的Object傳給Firebase，Firebase就會幫我們把更新的object通知給其他的使用者</li>
-                    </ul>
-                    </section>
-				</section>
-				
                 <section>
-                    <h2>justfont<span class="wt011">(雲端中文字型)</span></h2>
-                    <p>
-                        以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br><br>
-                        趕快前往 <a href="http://www.justfont.com/">justfont</a>吧！
-                    </p>
+                    <section>
+                        <h1 class="cht-font">多人共同編輯</h1>
+                        <a href="https://www.firebase.com/" target="_blank">Firebase</a> is OP.
+                    </section>
+                    <section>
+                        <h2 class="cht-font">Firebase</h2>
+                        <ul>
+                            <li class="fragment">註冊 → 新增 App → 撰寫 Client 端 JS → 完成</li>
+                            <li class="fragment">大幅度簡化資料的同步：只需要
+                            <a href="https://www.firebase.com/docs/javascript/firebase/push.html" target="_blank">push</a>
+                            自己定義的 object 到 Firebase，Firebase 就會把這個 object 送到所有使用者。
+                            </li>
+                            <li class="fragment">經由
+                            <a href="https://www.firebase.com/docs/javascript/firebase/on.html" target="_blank">child_added</a>
+                            事件處理每個由 Firebase 送來的 object。</li>
+                        </ul>
+
+                        <aside class="notes">
+                            Firebase 是一個簡化即時(Real-time)服務開發的雲端平台。
+                        </aside>
+                    </section>
+                    <section>
+                        <h2 class="cht-font">輕鬆打造聊天室</h2>
+                        <ul>
+                            <li class="fragment">我們用 Firebase 紀錄畫布的繪圖過程。</li>
+                            <li class="fragment">同理，我們也能用 Firebase 紀錄使用者的暱稱和訊息。</li>
+                            <li class="fragment">於是，聊天室就誕生了。</li>
+                        </ul>
+                    </section>
                 </section>
 
+                <section>
+                    <section>
+                        <h2 class="cht-font">Node.js & Express</h2>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2 class="cht-font">Heroku</h2>
+                    </section>
+                </section>
+
+				<section>
+					<h2 class="cht-font">Facebook Button</h2>
+					<p>
+						在這裡我們進入以下網頁,輸入'URL to share'及選擇'Layout'之後,按下'Get Code'就可以得到一個分享按鈕!
+						<div id="share" class="fb-share-button" data-type="button" data-href="http://simple-painter.herokuapp.com"></div>
+						<a href="https://developers.facebook.com/docs/plugins/share-button/">share-button</a>
+					</p>
+              	</section>
+				
                 <section>
                     <section>
 				        <h2>reveal.js</h2>
@@ -237,18 +275,17 @@
                     </section>
                 </section>
 
-				<section>
-					<h2>Facebook API</h2>
-					<p>
-						在這裡我們進入以下網頁,輸入'URL to share'及選擇'Layout'之後,按下'Get Code'就可以得到一個分享按鈕!
-						<div id="share" class="fb-share-button" data-type="button" data-href="http://simple-painter.herokuapp.com"></div>
-						<a href="https://developers.facebook.com/docs/plugins/share-button/">share-button</a>
-					</p>
-              	</section>
+                <section>
+                    <h2 class="cht-font">justfont<span class="wt011">(雲端中文字型)</span></h2>
+                    <p>
+                        以往網頁中想使用特殊字型，都須轉成圖片方能呈現，主要是技術的限制，並無法在網站中使用到真正的字型，最大的缺點就是，搜尋引擎並無法辨識圖片中的資訊；justfont 突破了中文字型的限制，並以真正的「字」呈現在網頁中，可利用網頁語法加入各種標籤，讓網站的關鍵字排名大幅提升!<br><br>
+                        趕快前往 <a href="http://www.justfont.com/">justfont</a>吧！
+                    </p>
+                </section>
 
                 <section>
-                    <h1>Thank you</h1>
-                    <h2>Q&A?</h2>
+                    <h1 class="cht-font">Thank you</h1>
+                    <h2 class="cht-font">Q&A?</h2>
                 </section>
             </div>
 		</div>
