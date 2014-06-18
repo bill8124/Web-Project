@@ -42,3 +42,9 @@ div.bitbucket {
     right: 1px;
     font-size: 10pt;
 } 
+#logo {
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #000;
+    vertical-align: middle;
+}
