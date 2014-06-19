@@ -1,7 +1,7 @@
 Web-Project
 ===========
 
-A simple online painter application
+An online collaborative painter
 
 [Project Introduction][1]
 
