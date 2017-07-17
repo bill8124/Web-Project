@@ -8,5 +8,5 @@ An online collaborative painter
 [Project Demo][2]
 
 
-  [1]: http://bill8124.github.io/Web-Project/
+  [1]: http://myjian.github.io/Web-Project/
   [2]: http://simple-painter.herokuapp.com/
